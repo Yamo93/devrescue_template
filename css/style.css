@@ -1,0 +1,260 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', Verdana, sans-serif; }
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Serif Pro', Georgia, serif;
+  background-color: #FEFEFE; }
+
+ul, ol {
+  list-style: none; }
+
+a:link,
+a:visited {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  text-decoration: none;
+  color: #ebd512;
+  transition: color .3s; }
+
+a:hover,
+a:active {
+  color: #8c7f0b; }
+
+.hero {
+  position: relative;
+  font-family: 'Source Sans Pro', Verdana, sans-serif;
+  width: 100%;
+  height: 90vh;
+  background: #25AC74;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #25AC74, #67C44F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #25AC74, #67C44F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .hero__nav {
+    padding: 2.5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; }
+    .hero__nav-list {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #FEFEFE;
+      display: flex;
+      width: 15%;
+      margin-right: 5%;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .hero__nav-list li:not(:last-child)::after {
+        content: '/';
+        color: #ebd512;
+        margin-left: 12px; }
+  .hero .banner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .hero .banner__img {
+      width: 100%;
+      height: 500px; }
+
+.pitch {
+  width: 100%;
+  padding: 3rem;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .pitch__title {
+    font-size: 3.2rem;
+    width: 50%;
+    text-align: center;
+    position: relative; }
+    .pitch__title::after {
+      content: '';
+      width: 20%;
+      height: 3px;
+      background-color: #2AA80F;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute; }
+
+.featured {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+  background: #25AC74;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #25AC74, #67C44F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #25AC74, #67C44F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FEFEFE; }
+  .featured__img {
+    width: 350px;
+    height: 250px; }
+  .featured__info {
+    width: 50%; }
+    .featured__info-title {
+      font-size: 3rem;
+      margin-bottom: 1.5rem; }
+    .featured__info-desc {
+      width: 70%;
+      line-height: 1.4em;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    .featured__info-link {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #CF7827; }
+
+.widget {
+  padding: 0 5rem;
+  margin: 5rem 0;
+  width: 100%;
+  height: 315px;
+  display: flex;
+  justify-content: space-around; }
+  .widget__twitter, .widget__calendar, .widget__weather {
+    width: 30%; }
+  .widget__twitter {
+    overflow: scroll; }
+  .widget__calendar {
+    display: flex;
+    justify-content: center; }
+    .widget__calendar .calendar {
+      font-family: "Source Sans Pro", Verdana, sans-serif;
+      width: 280px;
+      height: 315px;
+      background-color: rgba(51, 51, 51, 0.2);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 8px; }
+      .widget__calendar .calendar__months {
+        width: 100%;
+        height: 40px;
+        background-color: #25AC74;
+        color: #FEFEFE;
+        display: flex; }
+        .widget__calendar .calendar__months::before {
+          content: '\2190';
+          font-size: 2rem;
+          margin-left: 10px;
+          margin-top: 5px;
+          cursor: pointer; }
+        .widget__calendar .calendar__months::after {
+          content: '\2192';
+          font-size: 2rem;
+          margin-right: 10px;
+          margin-top: 5px;
+          cursor: pointer; }
+        .widget__calendar .calendar__months-name {
+          width: 50%;
+          margin: 5px auto;
+          font-size: 2.2rem;
+          text-align: center;
+          font-size: 300; }
+      .widget__calendar .calendar__weekdays {
+        width: 100%;
+        height: 35px;
+        background-color: #CF7827;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .widget__calendar .calendar__weekdays-name {
+          font-size: 1.4rem;
+          color: #FEFEFE; }
+      .widget__calendar .calendar__days {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #FEFEFE; }
+        .widget__calendar .calendar__days .prev, .widget__calendar .calendar__days .next {
+          color: rgba(0, 0, 0, 0.5); }
+        .widget__calendar .calendar__days .current {
+          background-color: rgba(51, 51, 51, 0.1); }
+        .widget__calendar .calendar__days-day {
+          font-size: 1.2rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          transition: all .3s; }
+          .widget__calendar .calendar__days-day:hover {
+            background-color: rgba(216, 29, 29, 0.74);
+            color: #FEFEFE;
+            cursor: pointer; }
+  .widget__weather {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end; }
+    .widget__weather .weather {
+      font-family: "Source Sans Pro", Verdana, sans-serif;
+      padding: 3rem;
+      width: 300px;
+      height: 315px;
+      background-color: rgba(42, 168, 15, 0.9);
+      color: #FEFEFE;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .widget__weather .weather__title {
+        font-size: 2rem;
+        margin-bottom: 10px; }
+      .widget__weather .weather__temp {
+        font-size: 6rem;
+        font-weight: 300;
+        position: relative; }
+        .widget__weather .weather__temp::before {
+          content: 'C';
+          position: absolute;
+          right: -23px;
+          top: 6px;
+          font-size: 3.8rem; }
+      .widget__weather .weather__desc {
+        font-size: 1.8rem;
+        margin-bottom: 5px; }
+      .widget__weather .weather__city {
+        font-size: 3.2rem;
+        color: #ebd512; }
+
+.footer {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  width: 100%;
+  height: 100px;
+  background-color: #CF7827;
+  color: #FEFEFE;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 1.8rem; }
+  .footer .wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .footer .wrapper p, .footer .wrapper a {
+      font-weight: 600; }

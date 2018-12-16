@@ -1,0 +1,359 @@
+$primary-color: #2AA80F;
+$secondary-color: #CF7827;
+$yellow: rgb(235, 213, 18);
+$white: #FEFEFE;
+$sansfont: 'Source Sans Pro', Verdana, sans-serif;
+$seriffont: 'Source Serif Pro', Georgia, serif;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Serif Pro', Georgia, serif;
+    background-color: $white;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a:link, 
+a:visited {
+    font-family: $sansfont;
+    text-decoration: none;
+    color: $yellow;
+    transition: color .3s;
+}
+
+a:hover, 
+a:active {
+    color: darken($yellow, 20%);
+}
+
+.hero {
+    position: relative;
+    font-family: 'Source Sans Pro', Verdana, sans-serif;
+    width: 100%;
+    height: 90vh;
+    background: #25AC74;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #25AC74, #67C44F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #25AC74, #67C44F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    &__nav {
+        padding: 2.5rem;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+
+        .logo {
+
+        }
+
+        &-list {
+            
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $white;
+            display: flex;
+            width: 15%;
+            margin-right: 5%;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            li:not(:last-child) {
+                &::after {
+                    content: '/';
+                    color: $yellow;
+                    margin-left: 12px;
+                }
+            }
+        }
+
+    }
+            .banner {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                &__img {
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+}
+
+.pitch {
+    width: 100%;
+    padding: 3rem;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 3.2rem;
+        width: 50%;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 20%;
+            height: 3px;
+            background-color: $primary-color;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    }
+}
+
+.featured {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    background: #25AC74;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #25AC74, #67C44F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #25AC74, #67C44F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $white;
+
+    &__img {
+        width: 350px;
+        height: 250px;
+    }
+
+    &__info {
+        width: 50%;
+
+        &-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &-desc {
+            width: 70%;
+            line-height: 1.4em;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        &-link {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $secondary-color;
+        }
+    }
+}
+
+.widget {
+    padding: 0 5rem;
+    margin: 5rem 0;
+    width: 100%;
+    height: 315px;
+    display: flex;
+    justify-content: space-around;
+
+    &__twitter, 
+    &__calendar, 
+    &__weather {
+        width: 30%;
+    }
+
+    &__twitter {
+        overflow: scroll;
+    }
+
+    &__calendar {
+        display: flex;
+        justify-content: center;
+
+        .calendar {
+            font-family: $sansfont;
+            width: 280px;
+            height: 315px;
+            background-color: rgba(#333, .2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            border-radius: 8px;
+
+            &__months {
+                width: 100%;
+                height: 40px;
+                background-color: #25AC74;
+                color: $white;
+                display: flex;
+                &::before {
+                    content: '\2190';
+                    font-size: 2rem;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: '\2192';
+                    font-size: 2rem;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                &-name {
+                    width: 50%;
+                    margin: 5px auto;
+                    font-size: 2.2rem;
+                    text-align: center;
+                    font-size: 300;
+                }
+            }
+
+            &__weekdays {
+                width: 100%;
+                height: 35px;
+                background-color: $secondary-color;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &-name {
+                    font-size: 1.4rem;
+                    color: $white;
+                }
+            }
+
+            &__days {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: $white;
+
+                .prev, .next {
+                    color: rgba(#000, .5);
+                }
+
+                .current {
+                    background-color: rgba(#333, .1);
+                }
+
+                &-day {
+                    font-size: 1.2rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    transition: all .3s;
+
+                    &:hover {
+                        background-color: rgba(216, 29, 29, 0.74);
+                        color: $white;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__weather {
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+
+        .weather {
+            font-family: $sansfont;
+            padding: 3rem;
+            width: 300px;
+            height: 315px;
+            background-color: rgba($primary-color, .9);
+            color: $white;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            &__temp {
+                font-size: 6rem;
+                font-weight: 300;
+                position: relative;
+
+                // &::after {
+                //     content: '\00b0';
+                //     position: absolute;
+                //     right: -20px;
+                // }
+                &::before {
+                    content: 'C';
+                    position: absolute;
+                    right: -23px;
+                    top: 6px;
+                    font-size: 3.8rem;
+                }
+            }
+
+            &__desc {
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+            }
+
+            &__city {
+                font-size: 3.2rem;
+                color: $yellow;
+            }
+
+        }
+    }
+}
+
+.footer {
+    font-family: $sansfont;
+    width: 100%;
+    height: 100px;
+    background-color: $secondary-color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+
+    .wrapper {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        p, a {
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Rescue</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="blog-hero">
+        <nav class="blog-hero__nav">
+                <img src="logo.svg" class="logo" alt="Logo">
+            <ul class="blog-hero__nav-list">
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="#">Artiklar</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="articles">
+        <div class="article">
+            <h1 class="article__title">Webbtypografi</h1>
+            <div class="article__img"></div>
+            <blockquote class="article__largequote">
+                	"Den som vid sidan av arbetet med datorn utvecklar sitt seende och sin skarpsynthet genom att teckna, hon eller han kan bli den webb-designer som konstnärligt sett skiljer sig från mängden. Den som ser det andra inte har sett. Och om jag idag var 17 år, och en dag hoppades på att kunna försörja mig genom att arbeta med webb-design, så skulle jag gå i Karl-Erik Forsbergs fotspår. Jag skulle läsa allt jag kom över om typografi, jag skulle skaffa mig kalligrafiska redskap och hänge mig åt hantverket trots, eller just därför, att det är med datorer jag skall arbeta."
+            </blockquote>
+            <cite>HC Ericson, professor grafisk design Mittuniversitetet</cite>
+            <p class="article__date">Publicerad 2012-11-01</p>
+            <p class="article__keywords">Web design, typografi, kalligrafi</p>
+        </div>
+        <div class="article">
+                <h1 class="article__title">	Välja typsnitt är ibland första steget</h1>
+                <p class="article__para-ingress">
+                        Att välja ett bra typsnitt är bara en liten del av god typografi. Ännu viktigare är vad du gör med typsnittet som storlek, stil, radavstånd, radlängd, färg, kontrast …</p>
+                        <p class="article__para">
+                        Det tvistas om seriff- eller sans-seriff typsnitt är bäst för skärmläsning. De flesta verkar anse att linjärer (sans-seriffer) är bäst för skärm. Och det stämmer, generellt sett, men det finns seriff-typsnitt som är gjorda med skärm i åtanke och som är bättre än sans-seriffer gjorda för papper. 
+                </p>
+                <p class="article__para">
+                        Viktigast är att använda ett typsnitt som är anpassat för skärm och inte för papper, tex Geneva, Charcoal, Lucida Grande, Verdana, Georgia mfl. Eller de nya “C-typsnitten“ från Microsoft:
+                </p>
+                <div class="wrap-list">
+                    <dl>
+                        <dt class="sans">Sans-serif</dt>
+                        <dd>Calibri</dd>
+                        <dd>Candara</dd>
+                        <dd>Corbel</dd>
+                    </dl>
+                    <dl>
+                        <dt class="serif">Serif</dt>
+                        <dd>Cambria</dd>
+                        <dd>Constantia</dd>
+                    </dl>
+                    <dl>
+                        <dt class="mono">Monospace</dt>
+                        <dd class="consolas">Consolas</dd>
+                    </dl>
+                </div>
+
+                <p class="article__para">Det finns tio typsnitt som du kan vara säker på att alla har (nåja), dessa följer med Windows, MS Office, Internet Explorer och Mac:</p>
+                <ul>
+                    <li>Andale Mono</li>
+                    <li>Arial</li>
+                    <li>Arial Black</li>
+                    <li>Comic Sans MS</li>
+                    <li>Courier New</li>
+                    <li>Georgia</li>
+                    <li>Impact</li>
+                    <li>Times New Roman</li>
+                    <li>Trebuchet MS</li>
+                    <li>Verdana</li>
+                </ul>
+                        <h3>För en lista med typsnitt så surfa hit:</h2> 
+                        <p class="article__para">
+                        <a href="http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html">http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html</a></p>.
+                <p class="article__para">
+                        Ett bra typsnitt för skärm har en relativt hög x-höjd och är något bredare med kraftiga linjer. Allt för att skapa ett större ljusrum inuti bokstaven. Det gör naturligtvis att typsnittet tar större plats än ett typsnitt för papper. Ett typsnitt för skärm kan inte innehålla lika mycket detaljer som varierande linjetjocklekar och seriffer. Gör att typsnitt för skärm kan se stora och klumpiga ut på papper. Men det går ju att lösa genom att ha en stilmall för skärm och en för utskrift.
+                </p>
+                <p class="article__para">
+                        Mixtra inte för mycket med bokstavsmellanrummen i brödtext. Värdena är redan bra som standard. Men rubriker kan behöva justeras.
+                </p>
+                <div class="article__fourthimg"></div>
+                <p class="article__imgtxt">Bild på en inspirerande tavla</p>
+
+                <h2>Respektera texten och läsaren</h2>
+                <p class="article__para">Kursiv och understruken text är mer svårläst på skärm. Så markera kortare citat med fet text, eller längre citat med ett eget stycke.</p>
+                <p class="article__para">Radavstånd och marginaler behöver vara något större på skärm jämfört med papper. Radlängd kan vara ungefär densamma som för papper, 55 ± 10 tecken. Tänk på att webbläsare inte kan avstava (man kan ge avstavningsförslag i html-koden men är det mycket text blir det för mycket jobb). Marginaljustering går alltså att använda men det blir inte bra. 99% använder vänster justering, man behöver inte ange det i koden det är satt som standard-värde.</p>
+                <p class="article__para">De flesta webbläsarna är för snåla med radavstånd, öka på 1-2 pixlar eller 10-20 %.</p>
+                <blockquote>"Även det bästa typsnitt kan fördärvas av en slarvigt genomförd typografi."</blockquote>
+                <cite>Carl Fredrik Hultenheim</cite>
+                <p class="article__date">Skriven av Mikael Becker</p>
+                <p class="article__date">Publicerad 2012-11-01</p>
+                <p class="article__keywords">Web design, typografi, kalligrafi</p>
+            </div>
+    </section>
+
+
+    <!-- footer: orange background... -->
+    <footer class="footer">
+        <div class="wrapper">
+            <p>&copy; Copyright 2018 Dev Rescue</p>
+            <a href="mailto:info@devrescue.com">info@devrescue.com</a>
+            <a href="tel:+461234567">+46 123 4567</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

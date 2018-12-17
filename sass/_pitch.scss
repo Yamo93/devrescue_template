@@ -1,0 +1,27 @@
+.pitch {
+    width: 100%;
+    padding: 3rem;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 3.2rem;
+        width: 50%;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 20%;
+            height: 3px;
+            background-color: $primary-color;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    }
+}
+

@@ -1,0 +1,166 @@
+.widget {
+    padding: 0 5rem;
+    margin: 5rem 0;
+    width: 100%;
+    height: 315px;
+    display: flex;
+    justify-content: space-around;
+
+    &__twitter, 
+    &__calendar, 
+    &__weather {
+        width: 30%;
+    }
+
+    &__twitter {
+        overflow: scroll;
+    }
+
+    &__calendar {
+        display: flex;
+        justify-content: center;
+
+        .calendar {
+            font-family: $sansfont;
+            width: 280px;
+            height: 315px;
+            background-color: rgba(#333, .2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            border-radius: 8px;
+
+            &__months {
+                width: 100%;
+                height: 40px;
+                background-color: #25AC74;
+                color: $white;
+                display: flex;
+                &::before {
+                    content: '\2190';
+                    font-size: 2rem;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: '\2192';
+                    font-size: 2rem;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                &-name {
+                    width: 50%;
+                    margin: 5px auto;
+                    font-size: 2.2rem;
+                    text-align: center;
+                    font-size: 300;
+                }
+            }
+
+            &__weekdays {
+                width: 100%;
+                height: 35px;
+                background-color: $secondary-color;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &-name {
+                    font-size: 1.4rem;
+                    color: $white;
+                }
+            }
+
+            &__days {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: $white;
+
+                .prev, .next {
+                    color: rgba(#000, .5);
+                }
+
+                .current {
+                    background-color: rgba(#333, .1);
+                }
+
+                &-day {
+                    font-size: 1.2rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    transition: all .3s;
+
+                    &:hover {
+                        background-color: rgba(216, 29, 29, 0.74);
+                        color: $white;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__weather {
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+
+        .weather {
+            font-family: $sansfont;
+            padding: 3rem;
+            width: 300px;
+            height: 315px;
+            background-color: rgba($primary-color, .9);
+            color: $white;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            &__temp {
+                font-size: 6rem;
+                font-weight: 300;
+                position: relative;
+
+                // &::after {
+                //     content: '\00b0';
+                //     position: absolute;
+                //     right: -20px;
+                // }
+                &::before {
+                    content: 'C';
+                    position: absolute;
+                    right: -23px;
+                    top: 6px;
+                    font-size: 3.8rem;
+                }
+            }
+
+            &__desc {
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+            }
+
+            &__city {
+                font-size: 3.2rem;
+                color: $yellow;
+            }
+
+        }
+    }
+}

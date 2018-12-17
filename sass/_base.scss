@@ -1,0 +1,45 @@
+$primary-color: #2AA80F;
+$secondary-color: #CF7827;
+$yellow: rgb(235, 213, 18);
+$white: rgb(241, 241, 241);
+$sansfont: 'Source Sans Pro', Verdana, sans-serif;
+$seriffont: 'Source Serif Pro', Georgia, serif;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Serif Pro', Georgia, serif;
+    background-color: $white;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a:link, 
+a:visited {
+    font-family: $sansfont;
+    text-decoration: none;
+    color: $yellow;
+    transition: color .3s;
+}
+
+a:hover, 
+a:active {
+    color: darken($yellow, 20%);
+}
+

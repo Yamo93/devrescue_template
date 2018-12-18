@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Rescue</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Todos:
+    - Finish off Blog site.
+    - Finish Contact site.
+
+    Suggestions:
+    - Maybe make articles fold up with JS (read more/read less thing)
+    - Increase margins between articles and headlines etc, make it more "airy" (luftigare)
+    - Mer luft kring bilderna (padding)
+
+-->
+<body>
+    <section class="info-hero">
+        <nav class="info-hero__nav">
+            <a href="./index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
+            <ul class="info-hero__nav-list">
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="./blog.html">Artiklar</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+        </nav>
+
+        <section class="about">
+            <h1 class="about__title">Om oss</h1>
+            <div class="about__boxes">
+                <div class="about__boxes-box">
+                    <i class="far fa-calendar-alt icon"></i>
+                    <h2 class="about__boxes-box--title">Professionell, modern utveckling</h2>
+                    <p class="about__boxes-box--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non culpa nihil dolore suscipit earum laboriosam aut natus dignissimos et, temporibus porro ipsa dicta fuga, cum quam aliquam architecto accusamus!</p>
+                </div>
+                <div class="about__boxes-box">
+                    <i class="fas fa-code-branch icon"></i>
+                    <h2 class="about__boxes-box--title">Vi levererar produkten i tid</h2>
+                    <p class="about__boxes-box--para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit, possimus aut nostrum deserunt voluptatibus quae sed, explicabo commodi dolores quaerat alias corporis error vero amet, perspiciatis architecto ea minima.</p>
+                </div>
+                <div class="about__boxes-box">
+                    <i class="far fa-comment-alt icon"></i>
+                    <h2 class="about__boxes-box--title">Vi erbjuder snabb kundservice</h2>
+                    <p class="about__boxes-box--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quas consequuntur perspiciatis, libero iste odit nam ducimus recusandae cumque nemo placeat error molestiae dicta dolorem deserunt nostrum voluptatum officia! Provident.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="infoimg"></div>
+
+        <div class="info">
+            <h1 class="info__title">Kontaktinformation</h1>
+            <p class="info__text">Tveka inte att höra av er till oss. Man kan nå oss på flera sätt, och vi ser till att ge er informationen ni önskar så fort som möjligt!</p>
+
+            <div class="info__details">
+                <div class="address">
+                    <i class="fas fa-home icon"></i>
+                    <p>Grankvistvägen 2b</p>
+                    <p>Malmö</p>
+                    <p>111 11</p>
+                </div>
+                <div class="telephone">
+                    <i class="fas fa-phone icon"></i>
+                    <p>+46 701 111 111</p>
+                    <p>+46 702 222 333</p>
+                </div>
+                <div class="mail">
+                    <i class="far fa-envelope icon"></i>
+                    <p>kontakt@devrescue.se</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contact__menubar">
+                <div class="contact__menubar-buttons">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="contact__menubar-options">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <div class="left">
+                    <h1 class="left__title">Kontaktformulär</h1>
+                </div>
+                <div class="right">
+                <form>
+                    <input type="text" class="name" placeholder="Skriv ditt namn...">
+                    <input type="email" class="email" placeholder="Vänligen ange mejladress...">
+                    <input type="text" class="message" placeholder="Vad är ditt önskemål?">
+                    <div class="buttons">
+                        <button type="reset">Nollställ</button>
+                        <button type="submit">Skicka</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- footer: orange background... -->
+    <footer class="footer">
+        <div class="wrapper">
+            <p>&copy; Copyright 2018 Dev Rescue</p>
+            <a href="mailto:info@devrescue.com">info@devrescue.com</a>
+            <a href="tel:+461234567">+46 123 4567</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

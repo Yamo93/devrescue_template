@@ -1,0 +1,111 @@
+.about {
+    width: 70%;
+    height: 100%;
+    margin: 7rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 8rem;
+        padding-bottom: 5px;
+        border-bottom: 2.5px solid $primary-color;
+    }
+
+    &__boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-box {
+            width: 27%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .icon {
+                font-size: 7rem;
+                color: $primary-color;
+                margin-bottom: 2rem;
+            }
+
+            &--title {
+                font-size: 2.6rem;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            &--para {
+                font-size: 2rem;
+                text-align: center;
+                line-height: 1.3em;
+            }
+        }
+        
+    }
+}
+
+.infoimg {
+    background-image: url(../img/infostartup.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.info {
+    width: 70%;
+    height: 100%;
+    margin: 7rem auto;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        padding-bottom: 5px;
+        border-bottom: 2.5px solid $primary-color;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5em;
+        margin-bottom: 2rem;
+        width: 500px;
+
+        &::first-letter {
+            font-size: 300%;
+        }
+    }
+
+    &__details {
+        width: 500px;
+        margin: 3rem auto;
+        // min-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+
+        .address, .telephone, .mail {
+            width: 250px;
+            // padding: 2rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            // margin: 3rem auto;
+            margin-bottom: 3rem;
+
+            .icon {
+                color: $primary-color;
+                margin-bottom: 1.5rem;
+                font-size: 3rem;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .hero, 
-.blog-hero {
+.blog-hero, 
+.info-hero {
     position: relative;
     font-family: 'Source Sans Pro', Verdana, sans-serif;
     width: 100%;
@@ -18,7 +19,7 @@
         min-height: 90px;
 
         .logo {
-            width: 15%;
+            width: 25rem;
         }
 
         ul li a:link, 
@@ -73,5 +74,9 @@
 }
 
 .blog-hero {
+    height: 100%;
+}
+
+.info-hero {
     height: 100%;
 }

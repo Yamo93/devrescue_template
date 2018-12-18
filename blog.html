@@ -11,11 +11,11 @@
 <body>
     <section class="blog-hero">
         <nav class="blog-hero__nav">
-                <img src="logo.svg" class="logo" alt="Logo">
+                <a href="index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
             <ul class="blog-hero__nav-list">
                 <li><a href="./index.html">Hem</a></li>
                 <li><a href="#">Artiklar</a></li>
-                <li><a href="#">Info</a></li>
+                <li><a href="./info.html">Info</a></li>
             </ul>
         </nav>
     </section>
@@ -71,9 +71,9 @@
                     <li>Trebuchet MS</li>
                     <li>Verdana</li>
                 </ul>
-                        <h3>För en lista med typsnitt så surfa hit:</h2> 
-                        <p class="article__para">
-                        <a href="http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html">http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html</a></p>.
+                <h3>För en lista med typsnitt så surfa hit:</h3> 
+                <p class="article__para">
+                    <a href="http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html" class="ellipses">http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html</a>.</p>
                 <p class="article__para">
                         Ett bra typsnitt för skärm har en relativt hög x-höjd och är något bredare med kraftiga linjer. Allt för att skapa ett större ljusrum inuti bokstaven. Det gör naturligtvis att typsnittet tar större plats än ett typsnitt för papper. Ett typsnitt för skärm kan inte innehålla lika mycket detaljer som varierande linjetjocklekar och seriffer. Gör att typsnitt för skärm kan se stora och klumpiga ut på papper. Men det går ju att lösa genom att ha en stilmall för skärm och en för utskrift.
                 </p>
@@ -89,10 +89,79 @@
                 <p class="article__para">De flesta webbläsarna är för snåla med radavstånd, öka på 1-2 pixlar eller 10-20 %.</p>
                 <blockquote>"Även det bästa typsnitt kan fördärvas av en slarvigt genomförd typografi."</blockquote>
                 <cite>Carl Fredrik Hultenheim</cite>
-                <p class="article__date">Skriven av Mikael Becker</p>
+                <p class="article__author">Skriven av Mikael Becker</p>
                 <p class="article__date">Publicerad 2012-11-01</p>
-                <p class="article__keywords">Web design, typografi, kalligrafi</p>
+                <p class="article__keywords">Typsnitt, typografi, läsbarhet, läslighet, webb, skärm</p>
             </div>
+
+            <!-- Artikel Tre -->
+            <div class="article">
+                <h1 class="article__title">Kontrast, för lite, för mycket …</h1>
+                <p class="article__para">Längre tillbaka i tiden, då de flesta klassiska typsnitten gjordes, var problemet att vi hade svårt att få bra läsbelysning plus att papperet inte var lika bra som idag. Idag är en del skärmar så ljusstarka att det kan vara svårt att läsa svart text på vit botten. En vanlig 24 tums-skärm har ungefär samma ljusstyrka som 70 stearinljus.</p>
+                <p class="article__para">Här kan du kontrollera kontrasten mellan de färger du valt: <a href="http://www.etre.com/tools/colourcheck">http://www.etre.com/tools/colourcheck</a>. För stor kontrast kan vara lika problematisk som för liten kontrast.</p>
+                <p class="article__para">Här kan du se hur din webbplats ser ut för någon som är färgblind: <a href="http://vischeck.com">http://vischeck.com</a>.</p>
+                <p class="article__para">Här kan du leka fram olika färgscheman: <a href="http://kuler.adobe.com">http://kuler.adobe.com</a>.
+                Kom ihåg att kontrollera färgerna på dina länkar också.
+                </p>
+                <div class="article__smallimg imgone"></div>
+                <p class="article__imgtxt">Varierande färger</p>
+                <h6>Kom ihåg de typografiska detaljerna</h6>
+                <p class="article__para">Det finns ingen anledning till att inte ha korrekta citat-tecken, tanke-streck osv på internet.</p>
+                <p class="article__para">En av många sidor där man kan leta reda på koden för specialtecken (character entities): <a href="http://www.digitalmediaminute.com/reference/entity/" class=" ellipses">http://www.digitalmediaminute.com/reference/entity/</a></p>
+                <p class="article__para">Indrag istället för blankrad fungerar alldeles utmärkt. Men ett fyrkantsindrag blir i minsta laget, gärna två fyrkanter. Eller varför inte använda anfang.</p>
+                <p class="article__para">Siffror bokstaveras upp till tolv.</p>
+                <p class="article__para">Gemena siffror fungerar jättebra men finns inte i alla typsnitt. Kapitäler går naturligtvis att använda men en skärm är oftast för grov för att man ska kunna se skillnad på äkta och falska kapitäler.</p>
+                <div class="article__smallimg imgtwo"></div>
+                <p class="article__imgtxt">Siffror och bokstäver</p>
+                <div class="article__author">Mikael Becker</div>
+                <div class="article__date">Publicerad 2012-11-01</div>
+                <div class="article__keywords">Design, typografi, läsbarhet, läslighet, färg</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article__bigimg"></div>
+                <h1 class="article__title">
+                    Frames och tables ska inte användas för layout
+                </h1>
+                <p class="article__para-ingress">
+                    Använd inte frames, använd server-side includes istället (eller php, asp …).
+                </p>
+                <p class="article__para">Använd inte tabeller för layout, använd CSS. Använd alltid H1-H6 för rubriker, om det inte räcker, lägg till tex h1.svart, om du vill ha flera H1-rubriker med olika färg. Google och andra blindsurfare förstår då fortfarande att det är en rubrik.</p>
+                <p class="article__para">
+                    Utseendemässigt är det ingen skillnad på &lt;i&gt; och &lt;em&gt;, båda gör texten kursiv, men &lt;i&gt; är bara dekoration, &lt;em&gt; emphasis talar också om för besökaren att detta är något speciellt. Skilj på innehåll och utseende. Alltså: innehållet struktureras med HTML, medan utseendet styrs helt och hållet av CSS. Titta på tex <a href="http://www.csszengarden.com" class=" ellipses">http://www.csszengarden.com</a> för inspiration.
+                </p>
+                <p class="article__para">Använd gärna relativa mått som em, % och inte absoluta mått som px eller pt. Ev kombinerat med att sätta min- och max-värden för kritiska delar, tex menyns spaltbredd.</p>
+                <p class="article__para">Validera både HTML <a href="http://validator.w3.org/">http://validator.w3.org/</a> och CSS <a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a>. </p>
+                <p class="article__para">Bild, ljud och video ska ha motsvarande innehåll som text.</p>
+
+                <h4>Med sunt förnuft kommer man långt</h4>
+                <p class="article__para">Om det finns en standard, använd den. Tex om jag klickar på logotypen ska jag komma tillbaka till förstasidan. </p>
+                <p class="article__para">Du ska inte förvirra eller irritera dina besökare. Bakåtknappen vet alla var den sitter.</p>
+
+                <h5>Du måste kunna grunderna först</h5>
+                <p class="article__para">Reglerna eller snarare riktlinjerna har finslipats under lång tid. Du ska givetvis känna till dessa, men reglerna ska också tänjas, prövas, ifrågasättas och utvecklas.</p>
+                <p class="article__para">Typografin och våra läsvanor har nog utvecklats/ändrats mer mellan 1996 (då Matthew Carter skapade Georgia och Verdana på uppdrag av Microsoft och internet slog igenom hos gemena man i Sverige) och idag än vad som skedde under hela 1900-talet.</p>
+                <h6>De vanligaste webbläsarna enligt statistik från W3C:</h6>
+                <ol>
+                    <li>Chrome 21 <strong>35%</strong></li>
+                    <li>Firefox 15 <strong>18%</strong></li>
+                    <li>Explorer 8 <strong>8%</strong></li>
+                    <li>Explorer 9 <strong>6.5%</strong></li>
+                    <li>Firefox 14 <strong>5%</strong></li>
+                    <li>Chrome 22 <strong>4%</strong></li>
+                    <li>Safari 5 <strong>2%</strong></li>
+                    <li>Safari 6 <strong>2%</strong></li>
+                    <li>Firefox 12 <strong>1.5%</strong></li>
+                    <li>Firefox 13 <strong>1.5%</strong></li>
+                    <li>Explorer 7 <strong>1%</strong></li>
+                    <li>Opera 12 <strong>1%</strong></li>
+                </ol>
+                <p class="article__author">Av Mikael Becker, <span>2012-11-01</span></p>
+                <p class="article__keywords">Design, webb, webbläsare, semantik, HTML, CSS</p>
+
+            </div>
+
     </section>
 
 

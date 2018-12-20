@@ -21,9 +21,19 @@
 
 -->
 <body>
+    <div class="backdrop"></div>
     <section class="info-hero">
         <nav class="info-hero__nav">
+            <div class="dropdown">
+                    <p class="close" id="close">&times;</p>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__menu-item"><a href="./index.html">Hem</a></li>
+                        <li class="dropdown__menu-item"><a href="./blog.html">Artiklar</a></li>
+                        <li class="dropdown__menu-item"><a href="#">Info</a></li>
+                    </ul>
+            </div>
             <a href="./index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
+            <i class="fas fa-bars burger" id="burger"></i>
             <ul class="info-hero__nav-list">
                 <li><a href="./index.html">Hem</a></li>
                 <li><a href="./blog.html">Artiklar</a></li>

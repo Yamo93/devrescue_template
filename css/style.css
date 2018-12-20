@@ -51,8 +51,7 @@ a:active {
   overflow: hidden;
   position: relative;
   font-family: 'Source Sans Pro', Verdana, sans-serif;
-  width: 100%;
-  min-height: 90vh; }
+  width: 100%; }
   .hero__nav,
   .blog-hero__nav,
   .info-hero__nav {
@@ -206,6 +205,9 @@ a:active {
         background-image: url("../img/bannersmall.png");
         background-position: top;
         height: 50vw; } }
+
+.hero {
+  min-height: 90vh; }
 
 .blog-hero {
   height: 100%; }

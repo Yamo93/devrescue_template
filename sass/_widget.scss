@@ -1,15 +1,32 @@
 .widget {
     padding: 0 5rem;
-    margin: 5rem 0;
+    margin: 8rem 0;
     width: 100%;
     height: 315px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1060px) {
+        padding: 0 2.5rem;
+    }
+
+    @media screen and (max-width: 1060px) {
+        // flex-direction: column;
+        flex-flow: row wrap;
+        height: 100%;
+    }
 
     &__twitter, 
     &__calendar, 
     &__weather {
         width: 30%;
+        height: 315px;
+        
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            flex: 2 1 315px;
+            margin-bottom: 5rem;
+        }
     }
 
     &__twitter {
@@ -19,11 +36,13 @@
     &__calendar {
         display: flex;
         justify-content: center;
+        min-width: 280px;
+        min-height: 315px;
 
         .calendar {
             font-family: $sansfont;
-            width: 280px;
-            height: 315px;
+            max-width: 280px;
+            max-height: 315px;
             background-color: rgba(#333, .2);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
             border-radius: 8px;
@@ -89,13 +108,15 @@
                 }
 
                 &-day {
-                    font-size: 1.2rem;
+                    font-size: 12px;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 40px;
                     height: 40px;
+                    // flex-basis: 40px;
+                    // flex-shrink: 30px;
                     transition: all .3s;
 
                     &:hover {
@@ -115,8 +136,10 @@
         justify-content: flex-end;
 
         .weather {
+            flex: 1 1 300px;
             font-family: $sansfont;
             padding: 3rem;
+            padding-top: 5rem;
             width: 300px;
             height: 315px;
             background-color: rgba($primary-color, .9);

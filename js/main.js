@@ -1,5 +1,10 @@
 window.addEventListener('DOMContentLoaded', loadWeather);
-document.querySelector('.articles').addEventListener('click', foldArticle);
+if (document.querySelector('.article')) {
+    document.querySelector('.articles').addEventListener('click', foldArticle);
+}
+document.querySelector('#burger').addEventListener('click', openMenu);
+document.querySelector('#close').addEventListener('click', closeMenu);
+document.querySelector('.backdrop').addEventListener('click', closeMenu);
 
 function loadWeather() {
     let xhttp = new XMLHttpRequest();
@@ -12,7 +17,6 @@ function loadWeather() {
         ${response.name}, <span class="country">${response.sys.country}</span>
         `;
         document.querySelector('.weather__icon').setAttribute('src', `http://openweathermap.org/img/w/${response.weather[0].icon}.png`);
-        console.log(response.main.temp);
         }
     }
     xhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Malmoe&units=metric&APPID=cb95478d73e0c30d7837a71c615b03b4', true);
@@ -37,4 +41,14 @@ function foldArticle(e) {
             toggle = false;
         }
     }
+}
+
+function openMenu() {
+    document.querySelector('.dropdown').style.transform = 'translateX(0)';
+    document.querySelector('.backdrop').style.display = 'block';
+}
+
+function closeMenu() {
+    document.querySelector('.dropdown').style.transform = 'translateX(-100vw)';
+    document.querySelector('.backdrop').style.display = 'none';
 }

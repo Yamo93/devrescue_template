@@ -1,10 +1,22 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+    display: none;
+}
+
 .hero, 
 .blog-hero, 
 .info-hero {
+    overflow: hidden;
     position: relative;
     font-family: 'Source Sans Pro', Verdana, sans-serif;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     
     &__nav {
         background: #25AC74;  /* fallback for old browsers */
@@ -15,11 +27,89 @@
         height: 20vh;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: auto;
-        min-height: 90px;
+        min-height: 120px;
+        position: relative;
+
+        @media screen and (max-width: 950px) {
+            // height: 55vh;
+        }
+
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 6rem;
+        }
 
         .logo {
             width: 25rem;
+            // transform: translateY(-20px);
+
+            @media screen and (max-width: 500px) {
+                height: 8rem;
+            }
+        }
+
+        .dropdown {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70vh;
+            background-color: $white;
+            z-index: 15;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, .2);
+            transform: translateX(-100vw);
+            transition: all .4s;
+
+            .close {
+                z-index: 20;
+                width: 40%;
+                margin: .5rem auto;
+                font-weight: 600;
+                font-size: 8rem;
+                cursor: pointer;
+            }
+
+            &__menu {
+                z-index: 20;
+                width: 40%;
+                margin: 2rem auto;
+                
+                &-item {
+                    z-index: 20;
+                    font-weight: 600;
+                    
+                    a:link, a:visited {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .burger {
+            color: $white;
+            cursor: pointer;
+            font-size: 4rem;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            display: none;
+
+            @media screen and (max-width: 650px) {
+                display: block;
+            }
+
+            @media screen and (max-width: 500px) {
+                display: block;
+                transform: translateY(-20px);
+            }
         }
 
         ul li a:link, 
@@ -48,6 +138,10 @@
             justify-content: space-between;
             align-items: flex-end;
 
+            @media screen and (max-width: 650px) {
+                display: none;
+            }
+
             
             li:not(:last-child) {
                 &::after {
@@ -59,16 +153,26 @@
         }
     }
             .banner {
-                position: absolute;
-                bottom: 0;
+                // position: absolute;
+                // bottom: 0;
+                background-image: url(../img/banner.png);
+                background-size: cover;
+                background-position: left;
                 width: 100%;
-                height: 65vh;
+                overflow: hidden;
+                height: 40vw;
+                min-height: 320px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                &__img {
-                    width: 100%;
-                    height: 500px;
+                @media screen and (max-width: 950px) {
+                    background-image: url('../img/bannersmall.png');
+                    background-position: top;
+                    height: 50vw;
+                }
+
+                @media screen and (max-width: 700px) {
+                    // height: 55vh;
                 }
             }
 }

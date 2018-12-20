@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dev Rescue</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,9 +21,19 @@
 
 -->
 <body>
+    <div class="backdrop"></div>
     <section class="hero">
         <nav class="hero__nav">
+            <div class="dropdown">
+                <p class="close" id="close">&times;</p>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu-item"><a href="#">Hem</a></li>
+                    <li class="dropdown__menu-item"><a href="./blog.html">Artiklar</a></li>
+                    <li class="dropdown__menu-item"><a href="./info.html">Info</a></li>
+                </ul>
+            </div>
             <a href="./index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
+            <i class="fas fa-bars burger" id="burger"></i>
             <ul class="hero__nav-list">
                 <li><a href="#">Hem</a></li>
                 <li><a href="./blog.html">Artiklar</a></li>
@@ -30,7 +41,6 @@
             </ul>
         </nav>
         <div class="banner">
-            <img src="img/banner.png" alt="Bärbar dator" class="banner__img">
         </div>
     </section>
     <section class="pitch">

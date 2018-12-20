@@ -6,11 +6,24 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 850px) {
+        height: calc(250px + 10vh);
+    }
+
     &__title {
         font-size: 3.2rem;
-        width: 50%;
+        width: 60%;
         text-align: center;
         position: relative;
+
+        @media screen and (max-width: 850px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 550px) {
+            width: 80%;
+            transform: translateY(-10vh);
+        }
 
         &::after {
             content: '';
@@ -21,6 +34,10 @@
             left: 50%;
             transform: translateX(-50%);
             position: absolute;
+
+            @media screen and (max-width: 550px) {
+                // display: none;
+            }
         }
     }
 }

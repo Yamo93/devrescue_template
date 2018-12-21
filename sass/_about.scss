@@ -1,11 +1,15 @@
 .about {
-    width: 70%;
+    width: 90%;
     height: 100%;
     margin: 7rem auto;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+    }
 
     &__title {
         text-align: center;
@@ -19,12 +23,27 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        padding: 0 3rem;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &-box {
-            width: 27%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            // padding: 1rem;
+
+            @media screen and (max-width: 900px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
 
             .icon {
                 font-size: 7rem;
@@ -42,6 +61,18 @@
                 font-size: 2rem;
                 text-align: center;
                 line-height: 1.5em;
+                @media screen and (max-width: 900px) {
+                    width: 450px;
+                }
+
+                @media screen and (max-width: 700px) {
+                    max-width: 350px;
+                    width: 100%;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 6rem;
             }
         }
         
@@ -53,7 +84,11 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 600px;
+    height: 90vh;
+
+    @media screen and (max-width: 700px) {
+        height: 50vh;
+    }
 }
 
 .info {
@@ -66,6 +101,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 750px) {
+        width: 90%;
+    }
+
     &__title {
         text-align: center;
         font-size: 3rem;
@@ -77,8 +116,17 @@
     &__text {
         font-size: 2rem;
         line-height: 1.5em;
+        margin: 0 auto;
         margin-bottom: 2rem;
         width: 500px;
+
+        @media screen and (max-width: 650px) {
+            width: 350px;
+        }
+
+        @media screen and (max-width: 460px) {
+            width: 280px;
+        }
 
         &::first-letter {
             font-size: 300%;
@@ -93,15 +141,30 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media screen and (max-width: 650px) {
+            width: 350px;
+        }
+
+        @media screen and (max-width: 460px) {
+            width: 280px;
+        }
+
         .wrapper {
             width: 100%;
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width: 460px) {
+                flex-direction: column;
+            }
+
             .telephone {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                @media screen and (max-width: 460px) {
+                    align-items: flex-start;
+                }
             }
         }
 

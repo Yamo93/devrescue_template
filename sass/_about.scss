@@ -1,3 +1,4 @@
+/*! Om oss-sektionen */
 .about {
     width: 90%;
     height: 100%;
@@ -12,6 +13,7 @@
     }
 
     &__title {
+        /*! Om oss titel */
         text-align: center;
         font-size: 3rem;
         margin-bottom: 8rem;
@@ -20,6 +22,7 @@
     }
 
     &__boxes {
+        /*! Box-wrapper */
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -31,6 +34,7 @@
         }
 
         &-box {
+            /*! Individuell box */
             width: 30%;
             display: flex;
             flex-direction: column;
@@ -46,18 +50,21 @@
             }
 
             .icon {
+                /*! Ikon */
                 font-size: 7rem;
                 color: $primary-color;
                 margin-bottom: 2rem;
             }
 
             &--title {
+                /*! Titel */
                 font-size: 2.6rem;
                 text-align: center;
                 margin-bottom: 2rem;
             }
 
             &--para {
+                /*! Text */
                 font-size: 2rem;
                 text-align: center;
                 line-height: 1.5em;
@@ -80,6 +87,7 @@
 }
 
 .infoimg {
+    /*! Stor startup-bild */
     background-image: url(../img/infostartup.jpg);
     background-size: cover;
     background-position: center;
@@ -92,6 +100,7 @@
 }
 
 .info {
+    /*! Info-sektion */
     width: 70%;
     height: 100%;
     margin: 7rem auto;
@@ -106,6 +115,7 @@
     }
 
     &__title {
+        /*! Titel */
         text-align: center;
         font-size: 3rem;
         margin-bottom: 5rem;
@@ -114,6 +124,7 @@
     }
 
     &__text {
+        /*! Kort text */
         font-size: 2rem;
         line-height: 1.5em;
         margin: 0 auto;
@@ -129,11 +140,13 @@
         }
 
         &::first-letter {
+            /*! Förstorar första bokstaven */
             font-size: 300%;
         }
     }
 
     &__details {
+        /*! Kontaktdetaljer */
         width: 500px;
         margin: 3rem auto;
         // min-width: 500px;
@@ -150,6 +163,7 @@
         }
 
         .wrapper {
+            /*! Wrapper som omger element */
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -159,6 +173,7 @@
             }
 
             .telephone {
+                /*! Telefonnummer */
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
@@ -169,6 +184,7 @@
         }
 
         .address, .telephone, .mail {
+            /*! Varje kontaktdel */
             width: 200px;
             // padding: 2rem;
             font-size: 1.8rem;
@@ -177,6 +193,7 @@
             margin-bottom: 3rem;
 
             .icon {
+                /*! Kontaktikon */
                 color: $primary-color;
                 margin-bottom: 1.5rem;
                 font-size: 3rem;

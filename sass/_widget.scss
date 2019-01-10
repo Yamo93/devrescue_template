@@ -1,3 +1,4 @@
+/*! Widget-området */
 .widget {
     padding: 0 5rem;
     margin: 8rem 0;
@@ -19,6 +20,7 @@
     &__twitter, 
     &__calendar, 
     &__weather {
+        /*! Basic stilar för varje widget */
         width: 30%;
         height: 315px;
         
@@ -30,10 +32,12 @@
     }
 
     &__twitter {
+        /*! Skapar scrollbar för Twitter-widgeten */
         overflow: scroll;
     }
 
     &__calendar {
+        /*! Stil för kalendern */
         display: flex;
         justify-content: center;
         min-width: 280px;
@@ -48,12 +52,14 @@
             border-radius: 8px;
 
             &__months {
+                /*! Månaderna */
                 width: 100%;
                 height: 40px;
                 background-color: #25AC74;
                 color: $white;
                 display: flex;
                 &::before {
+                    /*! Vänsterpilen */
                     content: '\2190';
                     font-size: 2rem;
                     margin-left: 10px;
@@ -62,6 +68,7 @@
                 }
 
                 &::after {
+                    /*! Högerpilen */
                     content: '\2192';
                     font-size: 2rem;
                     margin-right: 10px;
@@ -70,15 +77,17 @@
                 }
 
                 &-name {
+                    /*! Namn på nuvarande månad */
                     width: 50%;
                     margin: 5px auto;
                     font-size: 2.2rem;
                     text-align: center;
-                    font-size: 300;
+                    font-weight: 300;
                 }
             }
 
             &__weekdays {
+                /*! Veckodagarna */
                 width: 100%;
                 height: 35px;
                 background-color: $secondary-color;
@@ -93,6 +102,7 @@
             }
 
             &__days {
+                /*! Dagarna */
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
@@ -104,10 +114,12 @@
                 }
 
                 .current {
+                    /*! Nuvarande dag */
                     background-color: rgba(#333, .1);
                 }
 
                 &-day {
+                    /*! Enskild dag */
                     font-size: 12px;
                     border-radius: 50%;
                     display: flex;
@@ -131,11 +143,13 @@
     }
 
     &__weather {
+        /*! Väder-widgeten */
         width: 300px;
         display: flex;
         justify-content: flex-end;
 
         .weather {
+            /*! Basic stil för vädret */
             flex: 1 1 300px;
             font-family: $sansfont;
             padding: 3rem;
@@ -151,21 +165,19 @@
             align-items: center;
 
             &__title {
+                /*! Huvudtiteln */
                 font-size: 2rem;
                 margin-bottom: 10px;
             }
 
             &__temp {
+                /*! Temperaturen */
                 font-size: 6rem;
                 font-weight: 300;
                 position: relative;
 
-                // &::after {
-                //     content: '\00b0';
-                //     position: absolute;
-                //     right: -20px;
-                // }
                 &::before {
+                    /*! C-bokstaven för Celsius */
                     content: 'C';
                     position: absolute;
                     right: -23px;
@@ -175,11 +187,13 @@
             }
 
             &__desc {
+                /*! Beskrivningen */
                 font-size: 1.8rem;
                 margin-bottom: 5px;
             }
 
             &__city {
+                /*! Namn på stad */
                 font-size: 3.2rem;
                 color: $yellow;
             }

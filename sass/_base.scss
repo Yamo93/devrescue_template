@@ -5,12 +5,14 @@ $white: rgb(241, 241, 241);
 $sansfont: 'Source Sans Pro', Verdana, sans-serif;
 $seriffont: 'Source Serif Pro', Georgia, serif;
 
+/*! Basic reset */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*! Justerar alla rems på sidan */
 html {
     font-size: 62.5%;
 
@@ -19,10 +21,12 @@ html {
     }
 }
 
+/*! Typsnitt för alla titlar */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', Verdana, sans-serif;
 }
 
+/*! Initiala regler för body-taggen */
 body {
     position: relative;
     overflow-x: hidden;
@@ -32,10 +36,12 @@ body {
     background-color: $white;
 }
 
+/*! Tar bort punkterna från listorna */
 ul, ol {
     list-style: none;
 }
 
+/*! Standardstil för länkarna */
 a:link, 
 a:visited {
     font-family: $sansfont;

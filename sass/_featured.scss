@@ -1,3 +1,4 @@
+/*! Featured-sektionen */
 .featured {
     width: 100%;
     min-height: 400px;
@@ -21,6 +22,7 @@
     }
 
     &__img {
+        /*! Featured-bilden */
         width: 40vw;
         height: 250px;
 
@@ -30,6 +32,7 @@
     }
 
     &__info {
+        /*! Info-området till höger */
         width: 40vw;
         padding: 4rem 0;
 
@@ -39,11 +42,13 @@
         
 
         &-title {
+            /*! Titeln */
             font-size: 3rem;
             margin-bottom: 1.5rem;
         }
 
         &-desc {
+            /*! Beskrivningen */
             width: 90%;
             line-height: 1.4em;
             font-size: 2rem;

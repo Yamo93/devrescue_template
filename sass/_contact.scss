@@ -1,3 +1,4 @@
+/*! Kontaktsektionen */
 .contact {
     width: 550px;
     height: 100%;
@@ -7,7 +8,6 @@
     background-color: rgb(214, 216, 218);
     border-radius: 15px;
     border: .5px solid rgba(#FFF, .4);
-    // box-shadow: 1px 2px 2px rgba(0, 0, 0, .1);
 
     @media screen and (max-width: 630px) {
         width: 400px;
@@ -18,6 +18,7 @@
     }
 
     &__menubar {
+        /*! Mac-menyn */
         width: 100%;
         height: 25px;
         padding: 5px 15px;
@@ -29,6 +30,7 @@
         align-items: center;
 
         &-buttons {
+            /*! Knapparna */
             display: flex;
             justify-content: space-between;
             width: 40px;
@@ -54,6 +56,7 @@
         }
 
         &-options {
+            /*! De gråa punkterna till höger */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,6 +72,7 @@
     }
 
     &__form {
+        /*! Kontaktformulär */
         background-color: #E0E1E2;
         border-radius: 15px;
         border-top-right-radius: 0px;
@@ -81,10 +85,11 @@
 
         @media screen and (max-width: 450px) {
             flex-direction: column;
-            // margin: 3rem auto;
+            // comment
         }
 
         .left {
+            /*! Vänstra delen */
             width: 45%;
             // border-bottom-left-radius: 15px;
 
@@ -93,6 +98,7 @@
             }
 
             &__title {
+                /*! Titel */
                 font-size: 2.2rem;
                 color: #222;
                 position: relative;
@@ -102,6 +108,7 @@
                 }
 
                 &::after {
+                    /*! Lilla gröna linjen under titeln */
                     content: '';
                     position: absolute;
                     bottom: -10px;
@@ -119,6 +126,7 @@
         }
 
         .right {
+            /*! Högra delen */
             width: 55%;
             padding: 3rem;
             display: flex;
@@ -132,6 +140,7 @@
             
 
             .name, .email, .message {
+                /*! Kontaktfälten */
                 width: 100%;
                 background-color: inherit;
                 font: inherit;
@@ -153,10 +162,12 @@
             }
 
             .buttons {
+                /*! Wrapper för knapparna */
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 button {
+                    /*! Skicka/Nollställ-knapparna */
                     padding: 0;
                     display: block;
                     cursor: pointer;

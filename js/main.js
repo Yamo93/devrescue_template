@@ -1,11 +1,20 @@
+// Händelsehanterare som laddar in väder
+
 window.addEventListener('DOMContentLoaded', loadWeather);
+
+// Händelsehanterare som öppnar/stänger artiklarna
 if (document.querySelector('.article')) {
     document.querySelector('.articles').addEventListener('click', foldArticle);
 }
+
+// Händelsehanterare för att öppna menyn i mindre skärmar
 document.querySelector('#burger').addEventListener('click', openMenu);
+// Händelsehanterare för att stänga menyn i mindre skärmar
 document.querySelector('#close').addEventListener('click', closeMenu);
+// Händelsehanterare för att stänga menyn genom att klicka på den genomskinliga bakgrunden
 document.querySelector('.backdrop').addEventListener('click', closeMenu);
 
+// Funktion för att ladda in väder
 function loadWeather() {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -25,6 +34,7 @@ function loadWeather() {
 
 let toggle = false;
 
+// Funktion för att öppna/stänga artiklar
 function foldArticle(e) {
     if (e.target.classList.contains('read')) {
         e.preventDefault();
@@ -43,11 +53,13 @@ function foldArticle(e) {
     }
 }
 
+// Funktion för att öppna dropdown-meny
 function openMenu() {
     document.querySelector('.dropdown').style.transform = 'translateX(0)';
     document.querySelector('.backdrop').style.display = 'block';
 }
 
+// Funktion för att stänga dropdown-meny
 function closeMenu() {
     document.querySelector('.dropdown').style.transform = 'translateX(-100vw)';
     document.querySelector('.backdrop').style.display = 'none';

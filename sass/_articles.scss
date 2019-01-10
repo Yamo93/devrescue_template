@@ -1,3 +1,4 @@
+/*! Artikelsektionen */
 .articles {
     // margin-top: 120px;
     padding: 3rem 8rem;
@@ -14,6 +15,7 @@
     }
     
     .article {
+        /*! Enskild artikel */
         width: 60%;
         min-width: 700px;
         margin: 5rem auto;
@@ -39,6 +41,7 @@
         }
 
         &__title {
+            /*! Artikeltitel */
             width: 500px;
             font-size: 3.2rem;
             margin: 0 auto;
@@ -50,6 +53,7 @@
         }
 
         &__para, &__para-ingress {
+            /*! Artikelparagraf */
             font-size: 2rem;
             width: 500px;
             max-width: 500px;
@@ -62,6 +66,7 @@
         }
 
         &__para {
+            /*! Artikelparagraf */
             margin-bottom: 2rem;
         }
 
@@ -77,6 +82,7 @@
                 font-size: 2rem;
 
                 &::before {
+                    /*! Pilen i listan */
                     content: '→';
                     margin-right: 1rem;
                     color: $primary-color;
@@ -99,6 +105,7 @@
         }
 
         .ellipses {
+            /*! Gömmer en del av den långa länken */
             display: block;
             overflow: hidden;
             white-space: nowrap;
@@ -106,47 +113,52 @@
           }
 
         h2 {
+            /*! H2-titel */
             font-size: 2.8rem;
             width: 500px;
             margin: 2rem auto;
             margin-bottom: 1.5rem;
-
+            
             @media screen and (max-width: 900px) {
                 width: 100%;
             }
         }
-
+        
         h3 {
+            /*! H3-titel */
             font-size: 2.4rem;
             width: 500px;
             margin: 1rem auto;
-
+            
             @media screen and (max-width: 900px) {
                 width: 100%;
             }
         }
         
         h4 {
+            /*! H4-titel */
             font-size: 2.2rem;
             width: 500px;
             margin: 1rem auto;
-
+            
             @media screen and (max-width: 900px) {
                 width: 100%;
             }
         }
-
+        
         h5 {
+            /*! H5-titel */
             font-size: 2rem;
             width: 500px;
             margin: 1rem auto;
-
+            
             @media screen and (max-width: 900px) {
                 width: 100%;
             }
         }
-
+        
         h6 {
+            /*! H6-titel */
             font-size: 1.8rem;
             width: 500px;
             margin: 1rem auto;
@@ -157,13 +169,15 @@
         }
 
         &__para-ingress {
+            /*! Paragrafingress */
             color: rgba(0, 0, 0, .8);
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-
+        
         &__img {
+            /*! Stor artikelbild */
             background-image: url(../img/artikel1.jpg);
             background-size: cover;
             background-position: bottom;
@@ -177,6 +191,7 @@
             }
 
             &::before {
+                /*! Bildtext */
                 content: 'Av rawpixel på Unsplash';
                 position: absolute;
                 padding: 1.5rem;
@@ -191,6 +206,7 @@
         }
 
         &__fourthimg {
+            /*! Mindre bild */
             background-image: url(../img/artikel2.jpg);
             background-size: cover;
             background-position: bottom;
@@ -206,6 +222,7 @@
             
 
             &::before {
+                /*! Bildtext */
                 content: 'Av Nick Fewings på Unsplash';
                 text-align: center;
                 position: absolute;
@@ -221,6 +238,7 @@
         }
 
         &__bigimg {
+            /*! Stor bild */
             background-image: url(../img/artikel4.jpg);
             background-size: cover;
             background-position: center;
@@ -235,6 +253,7 @@
         }
 
         &__smallimg {
+            /*! Liten bild */
             background-size: cover;
             background-position: center;
             width: 350px;
@@ -250,9 +269,11 @@
         }
 
         .imgone {
+            /*! Bild nummer ett */
             background-image: url(../img/artikel3_ett.jpg);
 
             &::before {
+                /*! Bildtext */
                 content: 'Av Plush Design Studio på Unsplash';
                 text-align: center;
                 position: absolute;
@@ -268,9 +289,11 @@
         }
 
         .imgtwo {
+            /*! Bild nummer två */
             background-image: url(../img/artikel3_tva.jpg);
 
             &::before {
+                /*! Bildtext */
                 content: 'Av Bruno Martins på Unsplash';
                 text-align: center;
                 position: absolute;
@@ -286,6 +309,7 @@
         }
 
         &__imgtxt {
+            /*! Stil för beskrivande bildtexten */
             font-size: 1.6rem;
             font-family: $sansfont;
             width: 500px;
@@ -306,6 +330,7 @@
         }
 
         dl {
+            /*! Definition-lista */
             font-size: 2rem;
             padding: 2rem;
             width: 500px;
@@ -368,6 +393,7 @@
         }
 
         ol {
+            /*! Ordered list */
             list-style-type: decimal;
             font-size: 2rem;
             width: 500px;
@@ -380,6 +406,7 @@
         }
 
         blockquote {
+            /*! Stil för citat */
             width: 500px;
             padding-left: 2.5rem;
             border-left: 2.5px solid rgba(0, 0, 0, .3);
@@ -395,6 +422,7 @@
         }
 
         cite {
+            /*! Person bakom citat */
             width: 500px;
             font-family: $sansfont;
             font-size: 2rem;
@@ -408,6 +436,7 @@
         }
 
         &__date, &__author {
+            /*! Stil för datum och namn på författare */
             width: 500px;
             font-family: $sansfont;
             font-size: 1.8rem;
@@ -428,6 +457,7 @@
         }
 
         &__keywords {
+            /*! Nyckelord */
             width: 500px;
             margin: 0 auto;
             font-weight: 600;
@@ -441,25 +471,21 @@
         }
 
         .content {
+            /*! Wrapper som omger hela artikelinnehållet */
             height: 85vh;
             overflow: hidden;
             transition: all .5s;
             position: relative;
             opacity: .7;
 
-            // &::before {
-            //     z-index: 10;
-            //     content: '';
-            //     position: absolute;
-            //     top: 0;
-            //     width: 100%;
-            //     height: 100%;
-            //     background-color: rgba(0, 0, 0, .1);
-            //     box-shadow: 2px 3px 3px rgba(0, 0, 0, .1);
-            // }
+            @media screen and (min-height: 1000px) {
+                height: 55vh;
+            }
+
         }
 
         .read {
+            /*! Läs mer/mindre-knappen */
             cursor: pointer;
             display: block;
             margin: 3.5rem auto;

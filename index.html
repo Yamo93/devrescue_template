@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dev Rescue</title>
+    <!-- Länken nedan ger error i valideringen men den kommer direkt från Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- Länk till Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <!-- Länk till stilmall -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- Todos:
-    - Finish off Blog site.
-    - Finish Contact site.
-
-    Suggestions:
-    - Maybe make articles fold up with JS (read more/read less thing)
-    - Increase margins between articles and headlines etc, make it more "airy" (luftigare)
-    - Byt ut dummy text mot svensk omkastad text (projekt runeberg eller vad den hette)
-
--->
 <body>
+    <!-- Den klickbara, genomskinliga bakgrunden för dropdown-menyn -->
     <div class="backdrop"></div>
+    <!-- Framdelen av startsidan, det användaren ser först -->
     <section class="hero">
+        <!-- Menyn -->
         <nav class="hero__nav">
+            <!-- Dropdown-menyn som syns i mindre skärmar -->
             <div class="dropdown">
                 <p class="close" id="close">&times;</p>
                 <ul class="dropdown__menu">
@@ -32,43 +31,62 @@
                     <li class="dropdown__menu-item"><a href="./info.html">Info</a></li>
                 </ul>
             </div>
+            <!-- Logotypen i SVG-format -->
             <a href="./index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
+            <!-- Hamburgarikonen -->
             <i class="fas fa-bars burger" id="burger"></i>
+            <!-- Menylistan -->
             <ul class="hero__nav-list">
                 <li><a href="#">Hem</a></li>
                 <li><a href="./blog.html">Artiklar</a></li>
                 <li><a href="./info.html">Info</a></li>
             </ul>
         </nav>
+        <!-- Bannern -->
         <div class="banner">
         </div>
     </section>
+    <!-- Pitchen -->
     <section class="pitch">
+        <!-- Texten på pitchen -->
         <h1 class="pitch__title">Vi använder modern teknologi och skapar unika, välutvecklade användargränssnitt.</h1>
     </section>
+    <!-- Featured-sektionen -->
     <section class="featured">
+        <!-- Featured-bilden -->
         <img src="img/featured.jpg" alt="Bild" class="featured__img">
+        <!-- Sektionen för texten -->
         <div class="featured__info">
+            <!-- Titel -->
             <h2 class="featured__info-title">Andra afdelningen</h2>
-            <p class="featured__info-desc">Brefvet till general Wrangel tecknar en annan sida hos brefskrifvaren, nämligen dess stolthet. »De af Generalen, 
-            Commendören af Sv. Ordens Stora Kors, H:r friherre Wrangel 
-            mig till underskrift och antagande föreslagna propositioner 
-            finner jag af den beskaffenhet, att de af mig icke kunna antagas. 
-            Så snart sådana göras mig, som blifva öfverensstämmande med 
-            den värdighet jag uti Riket bekläder, och propositionerna.</p>
+            <!-- Beskrivning -->
+            <p class="featured__info-desc">Brefvet till general Wrangel tecknar en annan sida hos brefskrifvaren,
+                nämligen dess stolthet. »De af Generalen,
+                Commendören af Sv. Ordens Stora Kors, H:r friherre Wrangel
+                mig till underskrift och antagande föreslagna propositioner
+                finner jag af den beskaffenhet, att de af mig icke kunna antagas.
+                Så snart sådana göras mig, som blifva öfverensstämmande med
+                den värdighet jag uti Riket bekläder, och propositionerna.</p>
+            <!-- Länk -->
             <a href="#" class="featured__info-link">Link</a>
         </div>
     </section>
-    <!-- widget area -->
+    <!--Widget-sektionen -->
     <section class="widget">
+        <!-- Twitter-widget, slänger en error i valideringen trots att koden kommer från självaste Twitter -->
         <div class="widget__twitter">
-                <a class="twitter-timeline" href="https://twitter.com/JavaScriptDaily?ref_src=twsrc%5Etfw">Tweets by JavaScriptDaily</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" href="https://twitter.com/JavaScriptDaily?ref_src=twsrc%5Etfw">Tweets by
+                JavaScriptDaily</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+        <!-- Kalender-widget som jag gjort med enkel CSS -->
         <div class="widget__calendar">
             <div class="calendar">
+                <!-- Månaderna -->
                 <div class="calendar__months">
                     <h2 class="calendar__months-name">Maj</h2>
                 </div>
+                <!-- Veckodagar -->
                 <div class="calendar__weekdays">
                     <div class="calendar__weekdays-name">Sön</div>
                     <div class="calendar__weekdays-name">Mån</div>
@@ -78,6 +96,7 @@
                     <div class="calendar__weekdays-name">Fre</div>
                     <div class="calendar__weekdays-name">Lör</div>
                 </div>
+                <!-- Datumen -->
                 <div class="calendar__days">
                     <div class="calendar__days-day prev">26</div>
                     <div class="calendar__days-day prev">27</div>
@@ -103,6 +122,7 @@
                     <div class="calendar__days-day">17</div>
                     <div class="calendar__days-day">18</div>
                     <div class="calendar__days-day">19</div>
+                    <!-- Nuvarande datum -->
                     <div class="calendar__days-day current">20</div>
                     <div class="calendar__days-day">21</div>
                     <div class="calendar__days-day">22</div>
@@ -124,25 +144,37 @@
                 </div>
             </div>
         </div>
+        <!-- Egen väder-widget -->
         <div class="widget__weather">
             <div class="weather">
+                <!-- Titel -->
                 <h1 class="weather__title">Current Weather in</h1>
+                <!-- Stad och land -->
                 <h2 class="weather__city">Manila, <span class="country">PH</span></h2>
+                <!-- Temperatur -->
                 <h1 class="weather__temp">29.0</h1>
+                <!-- Bild som kommer från väder-API:et -->
                 <img src="http://openweathermap.org/img/w/10d.png" alt="Väderikon" class="weather__icon">
+                <!-- Väderbeskrivning -->
                 <p class="weather__desc">overcast clouds</p>
             </div>
         </div>
     </section>
 
-    <!-- footer: orange background... -->
+    <!-- Sidfoten -->
     <footer class="footer">
+        <!-- En wrapper som omger alla elementen -->
         <div class="wrapper">
+            <!-- Copyright -->
             <p>&copy; Copyright 2018 Dev Rescue</p>
+            <!-- Mejladress -->
             <a href="mailto:info@devrescue.com">info@devrescue.com</a>
+            <!-- Telefonnummer -->
             <a href="tel:+461234567">+46 123 4567</a>
         </div>
     </footer>
+    <!-- Enkel JS-kod för widgets, etc -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

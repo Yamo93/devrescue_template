@@ -1,3 +1,4 @@
+/*! Stil för pitchen */
 .pitch {
     width: 100%;
     padding: 3rem;
@@ -12,6 +13,7 @@
     }
 
     &__title {
+        /*! Titeln på pitchen */
         font-size: 3.2rem;
         width: 60%;
         text-align: center;
@@ -27,6 +29,7 @@
         }
 
         &::after {
+            /*! Linjen under titeln */
             content: '';
             width: 20%;
             height: 3px;
@@ -35,10 +38,6 @@
             left: 50%;
             transform: translateX(-50%);
             position: absolute;
-
-            @media screen and (max-width: 550px) {
-                // display: none;
-            }
         }
     }
 }

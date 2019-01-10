@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dev Rescue</title>
+    <!-- Länk till Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- Länk till Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <!-- Länk till stilmall -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <div class="backdrop"></div>
+    <!-- Den klickbara, genomskinliga bakgrunden för dropdown-menyn -->
+    <div class="backdrop"></div>
+    <!-- Framdelen av startsidan, det användaren ser först -->
     <section class="blog-hero">
+        <!-- Menyn -->
         <nav class="blog-hero__nav">
-                <div class="dropdown">
-                        <p class="close" id="close">&times;</p>
-                        <ul class="dropdown__menu">
-                            <li class="dropdown__menu-item"><a href="./index.html">Hem</a></li>
-                            <li class="dropdown__menu-item"><a href="#">Artiklar</a></li>
-                            <li class="dropdown__menu-item"><a href="./info.html">Info</a></li>
-                        </ul>
-                </div>
-                <a href="index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
-                <i class="fas fa-bars burger" id="burger"></i>
+            <!-- Dropdown-menyn som syns i mindre skärmar -->
+            <div class="dropdown">
+                <p class="close" id="close">&times;</p>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu-item"><a href="./index.html">Hem</a></li>
+                    <li class="dropdown__menu-item"><a href="#">Artiklar</a></li>
+                    <li class="dropdown__menu-item"><a href="./info.html">Info</a></li>
+                </ul>
+            </div>
+            <!-- Logotypen i SVG-format -->
+            <a href="index.html"><img src="logo.svg" class="logo" alt="Logo"></a>
+            <!-- Hamburgarikonen -->
+            <i class="fas fa-bars burger" id="burger"></i>
+            <!-- Menylistan -->
             <ul class="blog-hero__nav-list">
                 <li><a href="./index.html">Hem</a></li>
                 <li><a href="#">Artiklar</a></li>
@@ -30,31 +43,60 @@
             </ul>
         </nav>
     </section>
+    <!-- Artikelsektion -->
     <section class="articles">
+        <!-- Enskild artikel ett -->
         <div class="article">
+            <!-- Innehåll -->
             <div class="content">
-            <h1 class="article__title">Webbtypografi</h1>
-            <div class="article__img"></div>
-            <blockquote class="article__largequote">
-                	"Den som vid sidan av arbetet med datorn utvecklar sitt seende och sin skarpsynthet genom att teckna, hon eller han kan bli den webb-designer som konstnärligt sett skiljer sig från mängden. Den som ser det andra inte har sett. Och om jag idag var 17 år, och en dag hoppades på att kunna försörja mig genom att arbeta med webb-design, så skulle jag gå i Karl-Erik Forsbergs fotspår. Jag skulle läsa allt jag kom över om typografi, jag skulle skaffa mig kalligrafiska redskap och hänge mig åt hantverket trots, eller just därför, att det är med datorer jag skall arbeta."
-            </blockquote>
-            <cite>HC Ericson, professor grafisk design Mittuniversitetet</cite>
-            <p class="article__date">Publicerad 2012-11-01</p>
-            <p class="article__keywords">Web design, typografi, kalligrafi</p>
+                <!-- Titel -->
+                <h1 class="article__title">Webbtypografi</h1>
+                <!-- Artikelbild -->
+                <div class="article__img"></div>
+                <!-- Stort citat -->
+                <blockquote class="article__largequote">
+                    "Den som vid sidan av arbetet med datorn utvecklar sitt seende och sin skarpsynthet genom att
+                    teckna, hon eller han kan bli den webb-designer som konstnärligt sett skiljer sig från mängden. Den
+                    som ser det andra inte har sett. Och om jag idag var 17 år, och en dag hoppades på att kunna
+                    försörja mig genom att arbeta med webb-design, så skulle jag gå i Karl-Erik Forsbergs fotspår. Jag
+                    skulle läsa allt jag kom över om typografi, jag skulle skaffa mig kalligrafiska redskap och hänge
+                    mig åt hantverket trots, eller just därför, att det är med datorer jag skall arbeta."
+                </blockquote>
+                <!-- Namn på person -->
+                <cite>HC Ericson, professor grafisk design Mittuniversitetet</cite>
+                <!-- Datum -->
+                <p class="article__date">Publicerad 2012-11-01</p>
+                <!-- Nyckelord -->
+                <p class="article__keywords">Web design, typografi, kalligrafi</p>
             </div>
+            <!-- Läs mer-knapp -->
             <button class="read">Läs mer</button>
         </div>
+        <!-- Enskild artikel Två -->
         <div class="article">
+            <!-- Innehåll -->
             <div class="content">
-                <h1 class="article__title">	Välja typsnitt är ibland första steget</h1>
+                <!-- Titel -->
+                <h1 class="article__title"> Välja typsnitt är ibland första steget</h1>
+                <!-- Ingresstext -->
                 <p class="article__para-ingress">
-                        Att välja ett bra typsnitt är bara en liten del av god typografi. Ännu viktigare är vad du gör med typsnittet som storlek, stil, radavstånd, radlängd, färg, kontrast …</p>
-                        <p class="article__para">
-                        Det tvistas om seriff- eller sans-seriff typsnitt är bäst för skärmläsning. De flesta verkar anse att linjärer (sans-seriffer) är bäst för skärm. Och det stämmer, generellt sett, men det finns seriff-typsnitt som är gjorda med skärm i åtanke och som är bättre än sans-seriffer gjorda för papper. 
-                </p>
+                    Att välja ett bra typsnitt är bara en liten del av god typografi. Ännu viktigare är vad du gör med
+                    typsnittet som storlek, stil, radavstånd, radlängd, färg, kontrast …</p>
+                <!-- Paragraf -->
                 <p class="article__para">
-                        Viktigast är att använda ett typsnitt som är anpassat för skärm och inte för papper, tex Geneva, Charcoal, Lucida Grande, Verdana, Georgia mfl. Eller de nya “C-typsnitten“ från Microsoft:
+                    Det tvistas om seriff- eller sans-seriff typsnitt är bäst för skärmläsning. De flesta verkar anse
+                    att linjärer (sans-seriffer) är bäst för skärm. Och det stämmer, generellt sett, men det finns
+                    seriff-typsnitt som är gjorda med skärm i åtanke och som är bättre än sans-seriffer gjorda för
+                    papper.
                 </p>
+                <!-- Mindre titel -->
+                <h2>Vilket typsnitt ska jag välja?</h2>
+                <!-- Paragraf -->
+                <p class="article__para">
+                    Viktigast är att använda ett typsnitt som är anpassat för skärm och inte för papper, tex Geneva,
+                    Charcoal, Lucida Grande, Verdana, Georgia mfl. Eller de nya “C-typsnitten“ från Microsoft:
+                </p>
+                <!-- Definitionslista -->
                 <div class="wrap-list">
                     <dl>
                         <dt class="sans">Sans-serif</dt>
@@ -73,7 +115,10 @@
                     </dl>
                 </div>
 
-                <p class="article__para">Det finns tio typsnitt som du kan vara säker på att alla har (nåja), dessa följer med Windows, MS Office, Internet Explorer och Mac:</p>
+                <!-- Paragraf -->
+                <p class="article__para">Det finns tio typsnitt som du kan vara säker på att alla har (nåja), dessa
+                    följer med Windows, MS Office, Internet Explorer och Mac:</p>
+                <!-- Unordered list -->
                 <ul>
                     <li>Andale Mono</li>
                     <li>Arial</li>
@@ -86,83 +131,177 @@
                     <li>Trebuchet MS</li>
                     <li>Verdana</li>
                 </ul>
-                <h3>För en lista med typsnitt så surfa hit:</h3> 
+                <!-- Mindre titel -->
+                <h3>För en lista med typsnitt så surfa hit:</h3>
+                <!-- Paragraf -->
                 <p class="article__para">
+                    <!-- Länk -->
                     <a href="http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html" class="ellipses">http://mkv.itm.miun.se/personal/mikael.becker/typografi/lista.html</a>.</p>
+                <!-- Paragraf -->
                 <p class="article__para">
-                        Ett bra typsnitt för skärm har en relativt hög x-höjd och är något bredare med kraftiga linjer. Allt för att skapa ett större ljusrum inuti bokstaven. Det gör naturligtvis att typsnittet tar större plats än ett typsnitt för papper. Ett typsnitt för skärm kan inte innehålla lika mycket detaljer som varierande linjetjocklekar och seriffer. Gör att typsnitt för skärm kan se stora och klumpiga ut på papper. Men det går ju att lösa genom att ha en stilmall för skärm och en för utskrift.
+                    Ett bra typsnitt för skärm har en relativt hög x-höjd och är något bredare med kraftiga linjer.
+                    Allt för att skapa ett större ljusrum inuti bokstaven. Det gör naturligtvis att typsnittet tar
+                    större plats än ett typsnitt för papper. Ett typsnitt för skärm kan inte innehålla lika mycket
+                    detaljer som varierande linjetjocklekar och seriffer. Gör att typsnitt för skärm kan se stora och
+                    klumpiga ut på papper. Men det går ju att lösa genom att ha en stilmall för skärm och en för
+                    utskrift.
                 </p>
+                <!-- Mindre titel -->
+                <h4>Ett dyrbart tips:</h4>
+                <!-- Paragraf -->
                 <p class="article__para">
-                        Mixtra inte för mycket med bokstavsmellanrummen i brödtext. Värdena är redan bra som standard. Men rubriker kan behöva justeras.
+                    Mixtra inte för mycket med bokstavsmellanrummen i brödtext. Värdena är redan bra som standard. Men
+                    rubriker kan behöva justeras.
                 </p>
+                <!-- Mindre bild -->
                 <div class="article__fourthimg"></div>
+                <!-- Bildtext -->
                 <p class="article__imgtxt">Bild på en inspirerande tavla</p>
-
-                <h2>Respektera texten och läsaren</h2>
-                <p class="article__para">Kursiv och understruken text är mer svårläst på skärm. Så markera kortare citat med fet text, eller längre citat med ett eget stycke.</p>
-                <p class="article__para">Radavstånd och marginaler behöver vara något större på skärm jämfört med papper. Radlängd kan vara ungefär densamma som för papper, 55 ± 10 tecken. Tänk på att webbläsare inte kan avstava (man kan ge avstavningsförslag i html-koden men är det mycket text blir det för mycket jobb). Marginaljustering går alltså att använda men det blir inte bra. 99% använder vänster justering, man behöver inte ange det i koden det är satt som standard-värde.</p>
-                <p class="article__para">De flesta webbläsarna är för snåla med radavstånd, öka på 1-2 pixlar eller 10-20 %.</p>
+                <!-- Mindre titel -->
+                <h5>Respektera texten och läsaren</h5>
+                <!-- Paragraf -->
+                <p class="article__para">Kursiv och understruken text är mer svårläst på skärm. Så markera kortare
+                    citat med fet text, eller längre citat med ett eget stycke.</p>
+                <!-- Paragraf -->
+                <p class="article__para">Radavstånd och marginaler behöver vara något större på skärm jämfört med
+                    papper. Radlängd kan vara ungefär densamma som för papper, 55 ± 10 tecken. Tänk på att webbläsare
+                    inte kan avstava (man kan ge avstavningsförslag i html-koden men är det mycket text blir det för
+                    mycket jobb). Marginaljustering går alltså att använda men det blir inte bra. 99% använder vänster
+                    justering, man behöver inte ange det i koden det är satt som standard-värde.</p>
+                <!-- Mindre titel -->
+                <h6>Tips att tänka på</h6>
+                <!-- Paragraf -->
+                <p class="article__para">De flesta webbläsarna är för snåla med radavstånd, öka på 1-2 pixlar eller
+                    10-20 %.</p>
+                <!-- Mindre citat -->
                 <blockquote>"Även det bästa typsnitt kan fördärvas av en slarvigt genomförd typografi."</blockquote>
+                <!-- Personen bakom citatet -->
                 <cite>Carl Fredrik Hultenheim</cite>
+                <!-- Artikelförfattare -->
                 <p class="article__author">Skriven av Mikael Becker</p>
+                <!-- Datum -->
                 <p class="article__date">Publicerad 2012-11-01</p>
+                <!-- Nyckelord -->
                 <p class="article__keywords">Typsnitt, typografi, läsbarhet, läslighet, webb, skärm</p>
-                </div>
-                <button class="read">Läs mer</button>
             </div>
+            <!-- Läs mer knapp -->
+            <button class="read">Läs mer</button>
+        </div>
 
-            <!-- Artikel Tre -->
-            <div class="article">
-                <div class="content">
+        <!-- Artikel Tre -->
+        <div class="article">
+            <!-- Innehåll -->
+            <div class="content">
+                <!-- Titel -->
                 <h1 class="article__title">Kontrast, för lite, för mycket …</h1>
-                <p class="article__para">Längre tillbaka i tiden, då de flesta klassiska typsnitten gjordes, var problemet att vi hade svårt att få bra läsbelysning plus att papperet inte var lika bra som idag. Idag är en del skärmar så ljusstarka att det kan vara svårt att läsa svart text på vit botten. En vanlig 24 tums-skärm har ungefär samma ljusstyrka som 70 stearinljus.</p>
-                <p class="article__para">Här kan du kontrollera kontrasten mellan de färger du valt: <a href="http://www.etre.com/tools/colourcheck">http://www.etre.com/tools/colourcheck</a>. För stor kontrast kan vara lika problematisk som för liten kontrast.</p>
+                <!-- Paragraf -->
+                <p class="article__para">Längre tillbaka i tiden, då de flesta klassiska typsnitten gjordes, var
+                    problemet att vi hade svårt att få bra läsbelysning plus att papperet inte var lika bra som idag.
+                    Idag är en del skärmar så ljusstarka att det kan vara svårt att läsa svart text på vit botten. En
+                    vanlig 24 tums-skärm har ungefär samma ljusstyrka som 70 stearinljus.</p>
+                <!-- Mindre titel -->
+                <h2>Hjälpsamma länkar</h2>
+                <!-- Paragraf -->
+                <p class="article__para">Här kan du kontrollera kontrasten mellan de färger du valt: <a href="http://www.etre.com/tools/colourcheck">http://www.etre.com/tools/colourcheck</a>.
+                    För stor kontrast kan vara lika problematisk som för liten kontrast.</p>
+                <!-- Paragraf -->
                 <p class="article__para">Här kan du se hur din webbplats ser ut för någon som är färgblind: <a href="http://vischeck.com">http://vischeck.com</a>.</p>
+                <!-- Paragraf -->
                 <p class="article__para">Här kan du leka fram olika färgscheman: <a href="http://kuler.adobe.com">http://kuler.adobe.com</a>.
-                Kom ihåg att kontrollera färgerna på dina länkar också.
+                    Kom ihåg att kontrollera färgerna på dina länkar också.
                 </p>
+                <!-- Mindre bild -->
                 <div class="article__smallimg imgone"></div>
+                <!-- Bildtext -->
                 <p class="article__imgtxt">Varierande färger</p>
-                <h6>Kom ihåg de typografiska detaljerna</h6>
-                <p class="article__para">Det finns ingen anledning till att inte ha korrekta citat-tecken, tanke-streck osv på internet.</p>
-                <p class="article__para">En av många sidor där man kan leta reda på koden för specialtecken (character entities): <a href="http://www.digitalmediaminute.com/reference/entity/" class=" ellipses">http://www.digitalmediaminute.com/reference/entity/</a></p>
-                <p class="article__para">Indrag istället för blankrad fungerar alldeles utmärkt. Men ett fyrkantsindrag blir i minsta laget, gärna två fyrkanter. Eller varför inte använda anfang.</p>
-                <p class="article__para">Siffror bokstaveras upp till tolv.</p>
-                <p class="article__para">Gemena siffror fungerar jättebra men finns inte i alla typsnitt. Kapitäler går naturligtvis att använda men en skärm är oftast för grov för att man ska kunna se skillnad på äkta och falska kapitäler.</p>
+                <!-- Mindre titel -->
+                <h3>Kom ihåg de typografiska detaljerna</h3>
+                <!-- Paragraf -->
+                <p class="article__para">Det finns ingen anledning till att inte ha korrekta citat-tecken, tanke-streck
+                    osv på internet.</p>
+                <!-- Paragraf -->
+                <p class="article__para">En av många sidor där man kan leta reda på koden för specialtecken (character
+                    entities): <a href="http://www.digitalmediaminute.com/reference/entity/" class=" ellipses">http://www.digitalmediaminute.com/reference/entity/</a></p>
+                <!-- Paragraf -->
+                <p class="article__para">Indrag istället för blankrad fungerar alldeles utmärkt. Men ett fyrkantsindrag
+                    blir i minsta laget, gärna två fyrkanter. Eller varför inte använda anfang.</p>
+                <!-- Mindre titel -->
+                <h4>Siffror bokstaveras upp till tolv</h4>
+                <!-- Paragraf -->
+                <p class="article__para">Gemena siffror fungerar jättebra men finns inte i alla typsnitt. Kapitäler går
+                    naturligtvis att använda men en skärm är oftast för grov för att man ska kunna se skillnad på äkta
+                    och falska kapitäler.</p>
+                <!-- Mindre bild -->
                 <div class="article__smallimg imgtwo"></div>
+                <!-- Bildtext -->
                 <p class="article__imgtxt">Siffror och bokstäver</p>
+                <!-- Artikelförfattare -->
                 <div class="article__author">Mikael Becker</div>
+                <!-- Datum -->
                 <div class="article__date">Publicerad 2012-11-01</div>
+                <!-- Nyckelord -->
                 <div class="article__keywords">Design, typografi, läsbarhet, läslighet, färg</div>
-                </div>
-                <button class="read">Läs mer</button>
             </div>
+            <!-- Läs mer knapp -->
+            <button class="read">Läs mer</button>
+        </div>
 
-            <div class="article">
-                <div class="content">
+        <!-- Artikel Fyra -->
+        <div class="article">
+            <!-- Innehåll -->
+            <div class="content">
+                <!-- Stor bild -->
                 <div class="article__bigimg"></div>
+                <!-- Titel -->
                 <h1 class="article__title">
                     Frames och tables ska inte användas för layout
                 </h1>
+                <!-- Ingresstext -->
                 <p class="article__para-ingress">
                     Använd inte frames, använd server-side includes istället (eller php, asp …).
                 </p>
-                <p class="article__para">Använd inte tabeller för layout, använd CSS. Använd alltid H1-H6 för rubriker, om det inte räcker, lägg till tex h1.svart, om du vill ha flera H1-rubriker med olika färg. Google och andra blindsurfare förstår då fortfarande att det är en rubrik.</p>
+                <!-- Paragraf -->
+                <p class="article__para">Använd inte tabeller för layout, använd CSS. Använd alltid H1-H6 för rubriker,
+                    om det inte räcker, lägg till tex h1.svart, om du vill ha flera H1-rubriker med olika färg. Google
+                    och andra blindsurfare förstår då fortfarande att det är en rubrik.</p>
+                <!-- Paragraf -->
                 <p class="article__para">
-                    Utseendemässigt är det ingen skillnad på &lt;i&gt; och &lt;em&gt;, båda gör texten kursiv, men &lt;i&gt; är bara dekoration, &lt;em&gt; emphasis talar också om för besökaren att detta är något speciellt. Skilj på innehåll och utseende. Alltså: innehållet struktureras med HTML, medan utseendet styrs helt och hållet av CSS. Titta på tex <a href="http://www.csszengarden.com" class=" ellipses">http://www.csszengarden.com</a> för inspiration.
+                    Utseendemässigt är det ingen skillnad på &lt;i&gt; och &lt;em&gt;, båda gör texten kursiv, men
+                    &lt;i&gt; är bara dekoration, &lt;em&gt; emphasis talar också om för besökaren att detta är något
+                    speciellt. Skilj på innehåll och utseende. Alltså: innehållet struktureras med HTML, medan
+                    utseendet styrs helt och hållet av CSS. Titta på tex <a href="http://www.csszengarden.com" class=" ellipses">http://www.csszengarden.com</a>
+                    för inspiration.
                 </p>
-                <p class="article__para">Använd gärna relativa mått som em, % och inte absoluta mått som px eller pt. Ev kombinerat med att sätta min- och max-värden för kritiska delar, tex menyns spaltbredd.</p>
-                <p class="article__para">Validera både HTML <a href="http://validator.w3.org/">http://validator.w3.org/</a> och CSS <a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a>. </p>
+                <!-- Paragraf -->
+                <p class="article__para">Använd gärna relativa mått som em, % och inte absoluta mått som px eller pt.
+                    Ev kombinerat med att sätta min- och max-värden för kritiska delar, tex menyns spaltbredd.</p>
+                <!-- Paragraf -->
+                <p class="article__para">Validera både HTML <a href="http://validator.w3.org/">http://validator.w3.org/</a>
+                    och CSS <a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a>. </p>
+                <!-- Paragraf -->
                 <p class="article__para">Bild, ljud och video ska ha motsvarande innehåll som text.</p>
 
-                <h4>Med sunt förnuft kommer man långt</h4>
-                <p class="article__para">Om det finns en standard, använd den. Tex om jag klickar på logotypen ska jag komma tillbaka till förstasidan. </p>
-                <p class="article__para">Du ska inte förvirra eller irritera dina besökare. Bakåtknappen vet alla var den sitter.</p>
+                <!-- Mindre titel -->
+                <h2>Med sunt förnuft kommer man långt</h2>
+                <!-- Paragraf -->
+                <p class="article__para">Om det finns en standard, använd den. Tex om jag klickar på logotypen ska jag
+                    komma tillbaka till förstasidan. </p>
+                <!-- Paragraf -->
+                <p class="article__para">Du ska inte förvirra eller irritera dina besökare. Bakåtknappen vet alla var
+                    den sitter.</p>
 
-                <h5>Du måste kunna grunderna först</h5>
-                <p class="article__para">Reglerna eller snarare riktlinjerna har finslipats under lång tid. Du ska givetvis känna till dessa, men reglerna ska också tänjas, prövas, ifrågasättas och utvecklas.</p>
-                <p class="article__para">Typografin och våra läsvanor har nog utvecklats/ändrats mer mellan 1996 (då Matthew Carter skapade Georgia och Verdana på uppdrag av Microsoft och internet slog igenom hos gemena man i Sverige) och idag än vad som skedde under hela 1900-talet.</p>
-                <h6>De vanligaste webbläsarna enligt statistik från W3C:</h6>
+                <!-- Mindre titel -->
+                <h3>Du måste kunna grunderna först</h3>
+                <!-- Paragraf -->
+                <p class="article__para">Reglerna eller snarare riktlinjerna har finslipats under lång tid. Du ska
+                    givetvis känna till dessa, men reglerna ska också tänjas, prövas, ifrågasättas och utvecklas.</p>
+                <!-- Paragraf -->
+                <p class="article__para">Typografin och våra läsvanor har nog utvecklats/ändrats mer mellan 1996 (då
+                    Matthew Carter skapade Georgia och Verdana på uppdrag av Microsoft och internet slog igenom hos
+                    gemena man i Sverige) och idag än vad som skedde under hela 1900-talet.</p>
+                <!-- Mindre titel -->
+                <h4>De vanligaste webbläsarna enligt statistik från W3C:</h4>
+                <!-- Ordered list -->
                 <ol>
                     <li>Chrome 21 <strong>35%</strong></li>
                     <li>Firefox 15 <strong>18%</strong></li>
@@ -177,23 +316,32 @@
                     <li>Explorer 7 <strong>1%</strong></li>
                     <li>Opera 12 <strong>1%</strong></li>
                 </ol>
+                <!-- Artikelförfattare med datum-->
                 <p class="article__author">Av Mikael Becker, <span>2012-11-01</span></p>
+                <!-- Nyckelord -->
                 <p class="article__keywords">Design, webb, webbläsare, semantik, HTML, CSS</p>
             </div>
+            <!-- Läs mer knapp -->
             <button class="read">Läs mer</button>
-            </div>
+        </div>
 
     </section>
 
 
-    <!-- footer: orange background... -->
+    <!-- Sidfoten -->
     <footer class="footer">
+        <!-- En wrapper som omger alla elementen -->
         <div class="wrapper">
+            <!-- Copyright -->
             <p>&copy; Copyright 2018 Dev Rescue</p>
+            <!-- Mejladress -->
             <a href="mailto:info@devrescue.com">info@devrescue.com</a>
+            <!-- Telefonnummer -->
             <a href="tel:+461234567">+46 123 4567</a>
         </div>
     </footer>
+    <!-- Enkel JS-kod för widgets, etc -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

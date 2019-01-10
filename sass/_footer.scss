@@ -1,3 +1,4 @@
+/*! Sidfot */
 .footer {
     font-family: $sansfont;
     width: 100%;
@@ -10,15 +11,12 @@
     font-size: 1.8rem;
 
     .wrapper {
-        width: 100%;
+        /*! Wrapper som omger elementen */
+        width: 560px;
         // min-width: 560px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
-        @media screen and (max-width: 700px) {
-            // min-width: 460px;
-        }
 
         @media screen and (max-width: 550px) {
             flex-direction: column;

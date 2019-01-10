@@ -1,3 +1,4 @@
+/*! Genomskinlig bakgrund som är klickbar när dropdown fälls ner */
 .backdrop {
     position: fixed;
     top: 0;
@@ -9,6 +10,7 @@
     display: none;
 }
 
+/*! Framdelen av startsidan */
 .hero, 
 .blog-hero, 
 .info-hero {
@@ -19,7 +21,9 @@
     margin-top: 120px;
     // padding-top: 20px;
     
+    /*! Menyn */
     &__nav {
+        /*! En linear-bakgrund */
         background: #25AC74;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #25AC74, #67C44F);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #25AC74, #67C44F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -30,16 +34,12 @@
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        min-height: 120px;
+        max-height: 120px;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 10;
         box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
-
-        @media screen and (max-width: 950px) {
-            // height: 55vh;
-        }
 
         @media screen and (max-width: 500px) {
             flex-direction: column;
@@ -48,6 +48,7 @@
         }
 
         .logo {
+            /*! Logotypen */
             width: 25rem;
             // transform: translateY(-20px);
 
@@ -57,6 +58,7 @@
         }
 
         .dropdown {
+            /*! Dropdown-menyn */
             position: fixed;
             top: 0;
             left: 0;
@@ -72,6 +74,7 @@
             transform: translateX(-100vw);
             transition: all .4s;
 
+            /*! Knappen som stänger dropdown-menyn */
             .close {
                 z-index: 20;
                 width: 40%;
@@ -81,6 +84,7 @@
                 cursor: pointer;
             }
 
+            /*! Menyn i dropdown */
             &__menu {
                 z-index: 20;
                 width: 40%;
@@ -98,6 +102,7 @@
         }
 
         .burger {
+            /*! Hamburgarikonen */
             color: $white;
             cursor: pointer;
             font-size: 4rem;
@@ -131,6 +136,7 @@
 
 
         &-list {
+            /*! Listan i dropdown-menyn */
             
             font-size: 1.8rem;
             font-weight: 600;
@@ -157,10 +163,42 @@
             }
         }
     }
-            .banner {
-                // position: absolute;
-                // bottom: 0;
-                background-image: url(../img/banner.png);
+        .banner {
+        /*! Bannern */
+
+        &::before {
+            /*! Text på banner */
+                    content: 'Vi utvecklar ditt drömprojekt!';
+                    position: absolute;
+                    top: 90px;
+                    left: 5%;
+                    font-size: 3vw;
+                    font-weight: 600;
+                    
+                    @media screen and (max-width: 700px) {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    /*! Text på banner med bakgrundsfärg */
+                    content: 'Hör av dig till oss!';
+                    position: absolute;
+                    color: $white;
+                    background-color: rgba($primary-color, .6);
+                    top: 150px;
+                    left: 0;
+                    font-size: 2.7vw;
+                    // font-weight: 600; 
+                    padding: 1rem 3rem;
+
+                    @media screen and (max-width: 700px) {
+                        display: none;
+                    }
+                }
+
+                position: relative;
+                background-image: url(../img/banner_quality_notext.jpg);
                 background-size: cover;
                 background-position: left;
                 width: 100%;
@@ -171,18 +209,16 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                @media screen and (max-width: 950px) {
-                    background-image: url('../img/bannersmall.png');
-                    background-position: top;
-                    height: 50vw;
-                }
-
                 @media screen and (max-width: 700px) {
-                    // height: 55vh;
+                    background-image: url(../img/banner_quality_small_notext.jpg);
+                    background-position: bottom;
+                    height: 60vw;
+                    min-height: 200px;
                 }
             }
 }
 
+/*! Enkla justeringar för sektionhöjden */
 .hero {
     max-height: 90vh;
 }
